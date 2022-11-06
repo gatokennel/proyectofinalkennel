@@ -5,20 +5,20 @@ const Schema = mongoose.Schema;
 const pacienteSchema = new Schema({
     dni: {
         type: Number,
-        required: false,
+        required: true,
         unique: true
     },
     nombre: {
         type: String,
-        required: false
+        required: true
     },
     apellido: {
         type: String,
-        required: false
+        required: true
     },
     edad: {
         type: Number,
-        required: false
+        required: true
     },
     resultadoTest: {
         type: Boolean,

@@ -5,29 +5,29 @@ const Schema = mongoose.Schema;
 const medicoSchema = new Schema({
     matricula: {
         type: Number,
-        required: false,
+        required: true,
         unique: true
     },
     dni: {
         type: Number,
-        required: false,
+        required: true,
         unique: true
     },
     nombre: {
         type: String,
-        required: false
+        required: true
     },
     apellido: {
         type: String,
-        required: false
+        required: true
     },
     especialidad: {
         type: String,
-        required: false
+        required: true
     },
     edad: {
         type: Number,
-        required: false,
+        required: true,
     },
 });
 

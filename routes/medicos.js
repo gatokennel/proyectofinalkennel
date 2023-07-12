@@ -5,10 +5,11 @@ const router = express.Router();
 
 const { check } = require("express-validator");
 const { validarId } = require('../middlewares/validarId');
+const { validarIdMedico } = require('../middlewares/validarIdMedico');
 
 /* GET users listing. */
 router.get('/lista', obtenerMedico );
-router.get("/id/:id([0-9a-fA-F]{24})", validarId, obtenerMedicosPorId);
+router.get("/id/:id([0-9a-fA-F]{24})", validarIdMedico, obtenerMedicosPorId);
 
 
 
